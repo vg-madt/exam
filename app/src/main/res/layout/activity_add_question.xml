@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:id="@+id/textView0"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="40dp"
+            android:text="Test name:"
+            android:textColor="@color/half_white"/>
+
+        <EditText
+            android:id="@+id/testnameText"
+            android:layout_width="200dp"
+            android:textSize="18dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/et_bg"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="162dp"
+            android:textColor="@color/half_white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="40dp"
+        android:text="Question:"
+        android:textColor="@color/half_white"/>
+
+    <EditText
+        android:id="@+id/questionText"
+        android:layout_width="200dp"
+        android:textSize="18dp"
+        android:layout_height="100dp"
+        android:background="@drawable/et_bg"
+        android:layout_marginLeft="30dp"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="162dp"
+        android:textColor="@color/half_white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="40dp"
+            android:text="Option 1:"
+            android:textColor="@color/half_white"/>
+
+        <EditText
+            android:id="@+id/opt1Text"
+            android:layout_width="200dp"
+            android:textSize="18dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/et_bg"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="162dp"
+            android:textColor="@color/half_white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="40dp"
+            android:text="Option 2:"
+            android:textColor="@color/half_white"/>
+
+        <EditText
+            android:id="@+id/opt2Text"
+            android:layout_width="200dp"
+            android:textSize="18dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/et_bg"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="162dp"
+            android:textColor="@color/half_white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="40dp"
+            android:text="Option 3:"
+            android:textColor="@color/half_white"/>
+
+        <EditText
+            android:id="@+id/opt3Text"
+            android:layout_width="200dp"
+            android:textSize="18dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/et_bg"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="162dp"
+            android:textColor="@color/half_white"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="40dp"
+            android:text="#Correct:"
+            android:textColor="@color/half_white"/>
+
+        <EditText
+            android:id="@+id/correctText"
+            android:layout_width="200dp"
+            android:textSize="18dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/et_bg"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/half_white"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg"
+        android:textSize="18dp"
+        android:text="ADD"
+        android:textColor="@color/half_white"/>
+
+
+</LinearLayout>

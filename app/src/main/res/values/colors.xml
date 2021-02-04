@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#3c296b</color>
+    <color name="et_color">#ffffd7</color>
+    <color name="button">#ff6c3c</color>
+    <color name="half_white">#3c296b</color>
+    <color name="correctAns">#ff0074</color>
+</resources>

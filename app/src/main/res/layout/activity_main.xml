@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/quesText"
+        android:layout_width="360dp"
+        android:layout_height="120dp"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+        android:text="Mytext"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quesText"
+        app:layout_constraintVertical_bias="0.086">
+
+        <RadioButton
+            android:id="@+id/radAns1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:buttonTint="@color/half_white"
+            android:textColor="@color/white"
+            android:text="opt1"/>
+
+        <RadioButton
+            android:id="@+id/radAns2"
+            android:buttonTint="@color/half_white"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:text="opt2"/>
+
+        <RadioButton
+            android:id="@+id/radAns3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:buttonTint="@color/half_white"
+            android:textColor="@color/white"
+            android:text="opt3"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextbtn"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="68dp"
+        android:layout_height="32dp"
+        android:text="1:00"
+        android:textColor="@color/half_white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695" />
+
+    <TextView
+        android:id="@+id/quesNo"
+        android:layout_width="68dp"
+        android:layout_height="32dp"
+        android:text="1/X"
+        android:textColor="@color/half_white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/timer"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="127dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextbtn"
+        app:srcCompat="@drawable/clap"
+        android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
